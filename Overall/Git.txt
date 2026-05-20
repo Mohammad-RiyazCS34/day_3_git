@@ -1,0 +1,300 @@
+Git is a version control system used to track changes in files and manage projects efficiently.
+
+GitHub is a cloud platform used to store Git repositories online and collaborate with developers.
+
+GIT WORKFLOW
+
+Create Project
+↓
+git init
+↓
+git add .
+↓
+git commit
+↓
+git push
+↓
+GitHub Updated
+
+Initialize Git Repository
+
+git init
+
+Used to initialize Git inside project folder.
+
+Check Git Status
+
+git status
+
+Shows:
+
+modified files
+untracked files
+staged files
+Add Files to Staging Area
+
+Add specific file:
+
+git add file_name
+
+Example:
+
+git add app.py
+
+Add all files:
+
+git add .
+
+Commit Changes
+
+git commit -m "message"
+
+Example:
+
+git commit -m "Added login feature"
+
+Commit means saving snapshot of project.
+
+Connect GitHub Repository
+
+git remote add origin REPO_LINK
+
+Example:
+
+git remote add origin https://github.com/username/project.git
+
+Rename Branch
+
+git branch -M main
+
+Renames current branch to main.
+
+Push Code to GitHub
+
+git push -u origin main
+
+Meaning:
+
+git → Git command
+push → Upload code
+-u → Set upstream
+origin → GitHub repository
+main → Branch name
+Pull Latest Changes
+
+git pull origin main
+
+Downloads latest changes from GitHub to local project.
+
+Pull with Rebase
+
+git pull origin main --rebase
+
+Used to synchronize commit history cleanly.
+
+BRANCHING
+
+Branch is a separate workspace used to develop features safely without affecting main project.
+
+Create Branch
+
+git branch feature
+
+Check Branches
+
+git branch
+
+Check All Branches
+
+git branch -a
+
+Switch Branch
+
+git switch feature
+
+OR
+
+git checkout feature
+
+Create and Switch Branch Together
+
+git switch -c feature
+
+OR
+
+git checkout -b feature
+
+Merge Branch
+
+git merge feature
+
+Used to bring feature branch changes into current branch.
+
+Delete Local Branch
+
+git branch -d feature
+
+Deletes branch from local system.
+
+Force Delete Branch
+
+git branch -D feature
+
+Delete Branch from GitHub
+
+git push origin --delete feature
+
+Deletes branch from GitHub remote repository.
+
+PULL REQUEST (PR)
+
+Pull Request means:
+
+Request to merge one branch into another branch.
+
+Usually:
+
+feature → main
+
+PULL REQUEST WORKFLOW
+
+main
+↓
+create feature branch
+↓
+develop feature
+↓
+commit changes
+↓
+push feature branch
+↓
+create Pull Request
+↓
+review
+↓
+merge PR
+↓
+main updated
+
+MERGE CONFLICT
+
+Merge conflict happens when same file or same line is modified differently in two branches.
+
+Git becomes confused and asks developer to resolve manually.
+
+Conflict Example
+
+<<<<<<< HEAD
+print("Homepage Feature")
+
+print("Payment Feature")
+
+feature
+
+Resolve Conflict
+
+Edit final version manually:
+
+print("Homepage + Payment Feature")
+
+Then run:
+
+git add .
+
+git commit -m "Resolved merge conflict"
+
+.gitignore
+
+.gitignore is used to ignore unnecessary files from Git tracking.
+
+Example:
+
+pycache/
+*.pyc
+
+README.md
+
+README is project documentation file shown on GitHub repository homepage.
+
+MARKDOWN SYNTAX
+
+Main Heading:
+
+Heading
+
+Sub Heading:
+
+Sub Heading
+
+Bullet Points:
+
+Point 1
+Point 2
+
+Code Style:
+
+git push
+
+Code Block:
+
+git init
+git add .
+
+PROJECT STRUCTURE
+
+Day_3_GIT_and_GitHub/
+│
+├── README.md
+├── .gitignore
+├── company_login.py
+├── company_home.py
+├── company_features.py
+├── shop.py
+│
+└── Screenshots/
+├── 01_git_init.png
+├── 02_git_status.png
+├── 03_branch_create.png
+└── 22_merge_conflict.png
+
+ADDING SCREENSHOTS IN README
+
+REAL WORKFLOW LEARNED
+
+git init
+↓
+git add
+↓
+git commit
+↓
+git push
+↓
+branching
+↓
+pull request
+↓
+merge
+↓
+merge conflict
+↓
+resolve conflict
+
+LEARNING OUTCOME
+
+By completing Day 3, learned:
+
+Git basics
+GitHub workflow
+Branching
+Pull Requests
+Merge Conflicts
+.gitignore
+README.md
+Professional Git workflow
+
+TOOLS USED
+
+Git
+GitHub
+VS Code
+PowerShell
