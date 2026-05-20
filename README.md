@@ -55,10 +55,6 @@
 |`company_features.py`|Additional feature implementation|
 |`shop.py`|Merge conflict practice|
 
-### Screenshots Included
-![Git Init](Screenshots/02_git_init.png)
-![Git Status](Screenshots/07_git_status_files.png.png)
-
 ```text
 project/
 │
@@ -66,3 +62,11 @@ project/
 ├── app.py
 └── Screenshots/
 ```
+
+
+### Screenshots Included
+![Git Init](Screenshots/02_git_init.png)
+![Git Status](Screenshots/07_git_status_files.png)
+![Git add](Screenshots/08_git_add.png)
+![Git Commit](Screenshots/9_git_commit.png)
+![Git Push](Screenshots/13_git_push.png)
